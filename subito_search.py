@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-subito_search-1.py
+subito_search.py
 Скрипт для поиска товаров на сайте Subito.it (Италия) с использованием Playwright.
 Результаты сохраняются в Markdown-таблицу и JSON-файл.
 
@@ -55,9 +55,9 @@ def build_parser() -> argparse.ArgumentParser:
         description="Поиск товаров на Subito.it с сохранением в MD и JSON.",
         epilog=(
             "Примеры:\n"
-            '  python subito_search-1.py "armadio vintage"\n'
-            '  python subito_search-1.py "divano vintage" -proxy 127.0.0.1:8080\n'
-            '  python subito_search-1.py "tavolo vintage" -noproxy\n'
+            '  python subito_search.py "armadio vintage"\n'
+            '  python subito_search.py "divano vintage" -proxy 127.0.0.1:8080\n'
+            '  python subito_search.py "tavolo vintage" -noproxy\n'
         ),
         formatter_class=argparse.RawTextHelpFormatter,
     )
